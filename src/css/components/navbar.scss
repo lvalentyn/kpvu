@@ -78,6 +78,10 @@
             }  
         }
     }
+    &.navbar__catalog {
+        background-color: rgba(0, 0, 0, 0.6);
+        transition: .4s linear;
+    }
 }
 .sticky {
     // background: linear-gradient(-45deg, #e7a9b1,#c16f78,#e7a9b1,#c16f78);

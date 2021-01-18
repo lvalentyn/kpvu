@@ -72,7 +72,6 @@ window.addEventListener('DOMContentLoaded', () => {
                 $('.navbar').removeClass('sticky');
                 // $('.gotop').fadeOut();
             }
-
         });
         // header slider
         $('.header__slider').slick({
@@ -86,8 +85,12 @@ window.addEventListener('DOMContentLoaded', () => {
         });
         $('.slick-dots button').html('')
 
-
-
+        // catalog
+        $(".tab_item").not(":first").hide();
+        $(".wrapper .tab").click(function () {
+            $(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+            $(".catalog__cards").hide().eq($(this).index()).fadeIn()
+        }).eq(0).addClass("active");
         // modal
         // $('.modal__close').on('click', function () {
         //     $('.overlay, #thanks').fadeOut('slow');
