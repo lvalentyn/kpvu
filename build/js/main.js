@@ -86,11 +86,14 @@ window.addEventListener('DOMContentLoaded', () => {
         $('.slick-dots button').html('')
 
         // catalog
-        $(".tab_item").not(":first").hide();
-        $(".wrapper .tab").click(function () {
-            $(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+        $(".catalog__cards").not(":first").hide();
+        $(".catalog__tab").click(function () {
+            $(".catalog__tab").removeClass("active").eq($(this).index()).addClass("active");
             $(".catalog__cards").hide().eq($(this).index()).fadeIn()
-        }).eq(0).addClass("active");
+        })/* .eq(0).addClass("active") */;
+        $('#vent').click(function () {
+            $('#cat').addClass('active');
+        });
         // modal
         // $('.modal__close').on('click', function () {
         //     $('.overlay, #thanks').fadeOut('slow');

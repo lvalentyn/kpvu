@@ -204,6 +204,9 @@ html {
   font-size: 10px;
   scroll-behavior: smooth; }
 
+body {
+  background-color: #E5E5E5; }
+
 .page {
   width: 100%;
   position: absolute;
@@ -609,7 +612,8 @@ a {
         -o-object-fit: contain;
            object-fit: contain; }
     .footer__contacts_col4 {
-      width: 30%;
+      width: 29%;
+      margin-left: 30px;
       max-height: 120px;
       overflow: hidden;
       word-wrap: break-word; }
@@ -630,6 +634,43 @@ a {
 .catalog {
   padding: 168px 0 0;
   background: #E5E5E5; }
+  .catalog__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .catalog__tabs {
+    width: 330px;
+    height: 448px;
+    padding: 40px 20px 40px 50px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: #000000;
+    background: #FFFFFF;
+    border-radius: 10px; }
+  .catalog__tab {
+    max-width: 330px;
+    max-height: 44px;
+    margin-top: 20px;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-family: 'Montserrat';
+    font-size: 1.8rem;
+    text-transform: none;
+    color: #000000;
+    cursor: pointer; }
+    .catalog__tab:first-child {
+      margin-top: 70px; }
+    .catalog__tab.active {
+      font-weight: 700; }
+  .catalog__content {
+    width: 740px; }
   .catalog__cards {
     display: -webkit-box;
     display: -webkit-flex;
@@ -702,25 +743,6 @@ a {
       -webkit-transition: .4s linear;
       -o-transition: .4s linear;
       transition: .4s linear; }
-
-.wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-.tabs {
-  width: 400px;
-  height: 528px;
-  background: #FFFFFF;
-  border-radius: 10px; }
-
-.tab_content {
-  width: 740px; }
 
 .header__form {
   padding: 20px 35px 43px;
