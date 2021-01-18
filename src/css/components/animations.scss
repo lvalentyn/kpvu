@@ -1,0 +1,64 @@
+/* Animations */
+/* class="header__subtitle aud _anim-items _anim-off" */
+/* ._anim-items  Для подключения анимации. класс (active) */
+/* ._anim-off Для отключения повторной анимации*/
+/*adu = a - animation, from d(down), to u(up)  */
+/* animation если нужно отключить анимацию на девайсе
+    @media (max-width: 575px) {
+        ._anim-items {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        }
+    }*/
+    .abt {
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: all 1s ease 0s;
+    }
+    
+    .abt._active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+    
+    .atb {
+        transform: translate(0px, -120%);
+        opacity: 0;
+        transition: all 1s ease 0s;
+    }
+    
+    .atb._active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+    
+    .alr {
+        transform: translate(-120%, 0px);
+        opacity: 0;
+        transition: all 1s ease 0s;
+    }
+    
+    .alr._active{
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+    
+    .arl {
+        transform: translate(120%, 0px);
+        opacity: 0;
+        transition: all 1s ease 0s;
+    }
+    
+    .arl._active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+    
+    .ascale {
+        transform: scale(0);
+        transition: all 1s ease 0s;
+    }
+    
+    .ascale._active {
+        transform: scale(1);
+    }
