@@ -27,6 +27,7 @@
             font-family: 'Montserrat';
             font-size: 1.8rem;
             color: #272727;
+            outline: none;
         }
         &_btn {
             margin-top: 20px;
@@ -39,6 +40,13 @@
             border-radius: 10px;
             border: none;
             cursor: pointer;
+            outline: none;
+            transition: .4s linear;
+            &:hover {
+                color: #FFFF00;
+                border: 1px solid #FFFF00;
+                transition: .4s linear;
+            }
         }
     }
 }
@@ -98,6 +106,8 @@
 
             background: #F2F2F2;
             border-radius: 10px;
+            outline: none;
+
         }
         &_btn {
             width: 200px;
@@ -111,6 +121,15 @@
             font-size: 1.6rem;
             text-transform: uppercase;
             color: #272727;
+            outline: none;
+
+            transition: .4s linear;
+            &:hover {
+                background: #026900;
+                color: #FFFF00;
+                border: 1px solid #FFFF00;
+                transition: .4s linear;
+            }
         }
     }
 }

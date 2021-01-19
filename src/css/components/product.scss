@@ -4,9 +4,10 @@
         width: 107rem;
         background-color: #fff;
         padding: 40px 50px 95px;
+        border-radius: 10px;
     }
     &__title {
-        font-family: Montserrat;
+        font-family: 'Montserrat';
         font-weight: 500;
         font-size: 2.4rem;
         text-transform: uppercase;
@@ -69,13 +70,54 @@
         }
     }
     &__table {
-        margin-top: 70px;
+        margin-top: 69px;
         width: 1070px;
         height: 648px;
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: fill;
+        overflow: scroll;
+        table {
+            width: 99%; 
+            height: 99%;
+            text-align: center;
+            word-wrap: break-word;
+        }
+        td {
+            padding: 10px;
+            border: 1px solid black;
+            vertical-align: middle;
+            font-family: 'Montserrat';
+            line-height: 2.2rem;
+            color: #000000;
+        }
+        tr {
+            
+            &:nth-child(1), &:nth-child(2) {
+                background-color: #ccc;
+                font-weight: 700;
+                font-size: 1.8rem;
+                span {
+                    font-size: 2.5rem;
+                }
+                td {
+                    padding: 10px 10px 0 ;
+                    vertical-align: top;
+                }
+            }
+            &:nth-child(3) {
+                td {
+                    background-color: rgb(250, 184, 61);
+                    font-weight: 700;
+                    font-size: 1.8rem;
+                    vertical-align: middle;
+                }
+            }
+        }
+        .blue {
+            font-weight: 700;
+            vertical-align: middle;
+            color: rgb(50, 116, 240);
+        }
+        .black {
+            font-weight: 700;
         }
     }
     &__wrapper {

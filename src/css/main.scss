@@ -3,11 +3,10 @@
 @import "components/animations";
 @import "components/variables";
 @import "components/slick";
+@import "components/media";
 
 html {
     font-size: 10px;
-    scroll-behavior: smooth;
-   
 }
 body {
     background-color: #E5E5E5;
@@ -38,3 +37,4 @@ a {
 @import "components/catalog";
 @import "components/product";
 @import "components/forms";
+

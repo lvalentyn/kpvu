@@ -1,20 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-    /* burgermenu */
-    // const menu = document.querySelector('.navbar__menu'),
-    //     menuItems = document.querySelectorAll('.navbar__item'),
-    //     hamburger = document.querySelector('.navbar__burger');
 
-    // hamburger.addEventListener('click', () => {
-    //     hamburger.classList.toggle('active')
-    //     menu.classList.toggle('active')
-    // });
-    // menuItems.forEach(link => {
-    //     link.addEventListener('click', () => {
-    //         hamburger.classList.toggle('active')
-    //         menu.classList.toggle('active')
-    //     })
-    // });
     // Animations
 
     const animItems = document.querySelectorAll('._anim-items');
@@ -60,7 +46,9 @@ window.addEventListener('DOMContentLoaded', () => {
             animOnScroll();
         }, 300);
 
-    }
+    };
+    lightGallery(document.querySelector('.about__sertificates'));
+
     /* Jquery */
     $(document).ready(function () {
         // navmenu on scroll
@@ -114,8 +102,23 @@ window.addEventListener('DOMContentLoaded', () => {
 
             focusOnSelect: true
         });
-
-
+        // плавная прокрутка
+        // $("a[href='#up']")
+        $("a[href]").click(function () {
+            const _href = $(this).attr("href");
+            $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+            return false;
+        });
+        // burger 
+        $('.burger').click(function () {
+            $('.burger, .navbar__menu').toggleClass('active');
+            $('body').toggleClass('lock');
+            $('.navbar__tel a').toggleClass('grn');
+        });
+        $('.navbar__logo, .navbar__item, .navbar__tel').click(function () {
+            $('.burger, .navbar__menu').removeClass('active');
+            $('body').removeClass('lock');
+        });
 
         // modal
         // $('.modal__close').on('click', function () {

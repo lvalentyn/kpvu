@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
     <link rel="shortcut icon" href="./img/logomain.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
     <link rel="stylesheet" href="css/main.css">
     <title>KPVU</title>
 </head>
@@ -16,20 +17,19 @@
         <!--1 Navbar -->
         <section class="navbar navbar__catalog">
             <div class="container">
-                <!-- <button class="navbar__burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button> -->
-                <div class="navbar__logo"><a href="#"></a></div>
-                <div class="navbar__menu atb _anim-items _anim-off">
+                
+                <div class="navbar__logo"><a href="./index.html"></a></div>
+                <div class="navbar__menu">
                     <a class="navbar__item" href="./index.html">Головна</a>
-                    <a class="navbar__item underline" href="./products.html">Продукція</a>
+                    <a class="navbar__item" href="./products.html">Продукція</a>
                     <a class="navbar__item" href="./index.html#about">Про завод</a>
                     <a class="navbar__item" href="./index.html#contacts">Контакти</a>
                 </div>
                 <div class="navbar__tel">
                     <a href="tel:380997994424"><i class="fas fa-phone-alt"></i> +38 099-799-44-24</a>
+                </div>
+                <div class="burger">
+                    <span></span>
                 </div>
             </div>
         </section>
@@ -70,9 +70,96 @@
                 </div>
             </div>
 
-            <div class="product__table">
-                <img src="./img/table.png" alt="table">
-            </div>
+               <div class="product__table">
+                   <table>
+                    <tr>
+                        <td rowspan="2">Испол-<br>нение</td>
+                        <td rowspan="2">D/Dh</td>
+                        <td rowspan="2">N дв, кВт</td>
+                        <td rowspan="2">n дв, об./мин</td>
+                        <td rowspan="2">n р.к. дв, об./мин</td>
+                        <td colspan="2">Производительность мЗ/ч</td>
+                        <td colspan="2">Давление Па</td>
+                        <td rowspan="2">Код товара</td>
+                        <td rowspan="2">Цена, грн. с НДС</td>
+                    </tr>
+                    <tr>
+                        <td><span>&eta;</span>max</td>
+                        <td>В рабочей зоне</td>
+                        <td><span>&eta;</span>max</td>
+                        <td>В рабочей зоне</td>
+                        
+                    </tr>
+                    <tr>
+                        <td colspan="11">ВЦ 6-28 (ВР 120-28) №4</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>0.9</td>
+                       <td class="blue">1.5</td>
+                       <td class="blue">3000</td>
+                       <td class="blue">2820</td>
+                       <td>1230</td>
+                       <td>250-1850</td>
+                       <td>2126</td>
+                       <td>2173-2720</td>
+                       <td>id37475</td>
+                       <td class="black">Цена договорная</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>0.9</td>
+                       <td class="blue">2.2</td>
+                       <td class="blue">3000</td>
+                       <td class="blue">2820</td>
+                       <td>1230</td>
+                       <td>250-2500</td>
+                       <td>2126</td>
+                       <td>2173-786</td>
+                       <td>id8991</td>
+                       <td class="black">Цена договорная</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>0.95</td>
+                       <td class="blue">1.5</td>
+                       <td class="blue">3000</td>
+                       <td class="blue">2820</td>
+                       <td>1270</td>
+                       <td>290-1580</td>
+                       <td>2435</td>
+                       <td>2385-2304</td>
+                       <td>id37475</td>
+                       <td class="black">Цена договорная</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>0.95</td>
+                       <td class="blue">2.2</td>
+                       <td class="blue">3000</td>
+                       <td class="blue">2805</td>
+                       <td>1270</td>
+                       <td>290-2640</td>
+                       <td>2435</td>
+                       <td>2385-1103</td>
+                       <td>id8991</td>
+                       <td class="black">Цена договорная</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>0.95</td>
+                       <td class="blue">3.0</td>
+                       <td class="blue">3000</td>
+                       <td class="blue">2820</td>
+                       <td>1270</td>
+                       <td>290-2740</td>
+                       <td>2435</td>
+                       <td>2385-952</td>
+                       <td>id9114</td>
+                       <td class="black">Цена договорная</td>
+                    </tr>
+                </table>
+               </div>
 
             <div class="product__wrapper">
 
@@ -191,6 +278,7 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
