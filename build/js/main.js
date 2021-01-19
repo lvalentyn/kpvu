@@ -77,11 +77,10 @@ window.addEventListener('DOMContentLoaded', () => {
         $('.header__slider').slick({
             dots: true,
             arrows: false,
-            speed: 1000
-
-
-            // autoplay: true,
-            // autoplaySpeed: 2000
+            speed: 2000,
+            swipe: false,
+            autoplay: true,
+            autoplaySpeed: 5000
         });
         $('.slick-dots button').html('')
 
@@ -90,10 +89,34 @@ window.addEventListener('DOMContentLoaded', () => {
         $(".catalog__tab").click(function () {
             $(".catalog__tab").removeClass("active").eq($(this).index()).addClass("active");
             $(".catalog__cards").hide().eq($(this).index()).fadeIn()
-        })/* .eq(0).addClass("active") */;
+        }).eq(0).addClass("active");
         $('#vent').click(function () {
             $('#cat').addClass('active');
         });
+
+
+        // product slider
+        $('.main__photo').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            swipe: false,
+            asNavFor: '.sub__photo'
+        });
+        $('.sub__photo').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.main__photo',
+            dots: false,
+            centerMode: false,
+            arrows: false,
+
+            focusOnSelect: true
+        });
+
+
+
         // modal
         // $('.modal__close').on('click', function () {
         //     $('.overlay, #thanks').fadeOut('slow');

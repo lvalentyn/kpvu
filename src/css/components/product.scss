@@ -1,0 +1,112 @@
+.product {
+    padding: 168px 0 0;
+    .container{
+        width: 107rem;
+        background-color: #fff;
+        padding: 40px 50px 95px;
+    }
+    &__title {
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        color: #000000;
+    }
+    &__top {
+        margin-top: 65px;
+        display: flex;
+        justify-content: space-between;
+        &_album {
+            width: 388px;
+            height: 275px;
+            .main__photo {
+                width: 388px;
+                height: 211px;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: fill;
+                }
+            }
+            .sub__photo {
+                margin-top: 16px;
+                
+                &_item {
+                    width: 87px !important;
+                    height: 56px;
+                    margin-right: 13px;
+                    cursor: pointer;
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: fill;
+                    }
+                }
+            }
+        }
+        &_text {
+            width: 630px;
+            overflow: hidden;
+        }
+        &_title {
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: 2.4rem;
+            text-transform: uppercase;
+            color: #000000;
+        }
+        &_descr {
+            margin-top: 27px;
+            word-wrap: break-word;
+            font-family: 'Montserrat';
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            color: #000000;
+        }
+    }
+    &__table {
+        margin-top: 70px;
+        width: 1070px;
+        height: 648px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+    }
+    &__wrapper {
+        margin-top: 84px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 50px;
+    }
+    &__text {
+        width: 500px;
+        word-wrap: break-word;
+        overflow: hidden;
+        &_title {
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            color: #000000;
+        }
+        &_descr {
+            margin-top: 15px;
+            list-style-type: "\2013";
+            list-style-position: inside;
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            color: #000000;
+            text-transform: lowercase;
+        }
+    }
+   
+}
