@@ -78,9 +78,7 @@ window.addEventListener('DOMContentLoaded', () => {
             $(".catalog__tab").removeClass("active").eq($(this).index()).addClass("active");
             $(".catalog__cards").hide().eq($(this).index()).fadeIn()
         }).eq(0).addClass("active");
-        $('#vent').click(function () {
-            $('#cat').addClass('active');
-        });
+
 
 
         // product slider
@@ -118,6 +116,7 @@ window.addEventListener('DOMContentLoaded', () => {
         $('.navbar__logo, .navbar__item, .navbar__tel').click(function () {
             $('.burger, .navbar__menu').removeClass('active');
             $('body').removeClass('lock');
+            $('.navbar__tel a').removeClass('grn');
         });
 
         // modal

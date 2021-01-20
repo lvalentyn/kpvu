@@ -3,15 +3,15 @@
     background-color: #E5E5E5;
     .container {
         position: relative;
+        
     }
     &__content {
         position: absolute;
+        width: 100%;
         top: 0;
         left: 0;
         height: 450px;
-        max-height: 450px;
         margin-top: 128px;
-        padding: 0 50px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -19,7 +19,8 @@
         z-index: 6;
     }
     &__text {
-        margin-right: 20px;
+        width: 500px;
+        margin-left: 50px;
     }
     &__title {
         font-family: 'Montserrat';
@@ -28,6 +29,7 @@
         line-height: 4.3rem;
         text-transform: uppercase;
         color: #FFFFFF;
+        word-wrap: break-word;
     }
     &__subtitle {
         margin-top: 3.3rem;
@@ -36,6 +38,7 @@
         font-size: 2.4rem;
         line-height: 2.8rem;
         color: #FFFFFF;
+        word-wrap: break-word;
     }
 
     &__slider {
@@ -71,7 +74,7 @@
         ul.slick-dots {
             position: absolute;
             display: flex !important;
-            top: 570px;
+            bottom: 50px;
             left: 50%;
             transform: translateX(-50%);
             li {
