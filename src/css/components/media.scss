@@ -880,5 +880,26 @@
         }
 
     }
-    
+    @media (max-width: 340px) {
+        .navbar__tel {
+            a {
+                font-size: 1.4rem;
+            }
+        }
+        .page .product .container {
+            width: auto;
+        }
+        .header__title {
+            font-size: 2rem;
+            line-height: 2.5rem;
+        }
+        .product__text {
+            width: 100%;
+        }
+        .footer__contacts_col2 {
+            i {
+                display: none;
+            }
+        }
+    }
 }
